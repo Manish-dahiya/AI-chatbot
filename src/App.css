@@ -1,1 +1,69 @@
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.messages{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.userMsg{
+    background-color: #171718;
+    align-self: flex-end;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 60vw;
+    min-width: 30vw;
+    
+}
+.responseMsg{
+    background-color: #171718;
+    align-self: flex-start;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 60vw;
+    min-width: 30vw;
+    
+}
+.loader {
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #171718; /* Blue . The border-top property in CSS is used to set the style, color, and width of the top border of an element */
+    border-bottom:5px solid #171718;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    /* to center the div on the page */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
+
+/* customisation of scroll bar */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: black; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Handle color */
+    border-radius: 6px; /* Handle border radius */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Handle color on hover */
+}
